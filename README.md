@@ -33,19 +33,19 @@ Underscore is only allowed once in a class name, and it always follows the compo
 - "my-component_content"
 - "my-component_content-text"
 
-_Why?_ This makes it clear at a glance that this class lives in "some-component", and that it's on an element inside this component's template called "container-text".
+_Why?_ This makes it clear at a glance that this class lives in "my-component", and that it's on an element inside this component's template called "container-text".
 
 ### Modifiers
 
 Modifiers are the equivalent of a boolean flag on elements. It's either on (class is added) or off (class is removed).
 
-For the class naming, use a double dash after the base to mark a modifier class: "[element-class]--[modifier]". A modifier always modifies an element, which can be a component or an element in its template.
+For the class naming, use a double dash after the base to mark a modifier class: "element-class--modifier". A modifier always modifies an element, which can be a component or an element in its template.
 
 **Examples:**
-- "my-component--disabled": Target this class when you want to modify the "my-component" element for disabled styles.
-- "some-component_text--disabled": Target this class when you want to modify
+- "my-component--disabled"
+- "my-component_text--larger"
 
-If you're using SCSS or similar, it's recommended to use the `&--[state]` syntax to target this in CSS.
+If you're using SCSS or similar, it's recommended to use the `&--modifier` syntax to target modifier classes.
 
 ### Prefixing
 
