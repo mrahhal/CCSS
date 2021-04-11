@@ -35,13 +35,6 @@ Underscore is only allowed once in a class name, and it always follows the compo
 
 _Why?_ This makes it clear at a glance that this class lives in "some-component", and that it's on an element inside this component's template called "container-text".
 
-
-In case of shared components, consider using a prefix such as "s-*" to make it easier to tell if the component is shared or specific in usage.
-
-Optional: Add a constant prefix (such as "app-*") to all component class names in all of the application. This will act as namespacing.
-
-_Why?_ Avoids potential naming clashes between your own component and other 3rd party CSS your app uses. Do this especially if your components have generic/common names.
-
 ### Modifiers
 
 Modifiers are the equivalent of a boolean flag on elements. It's either on (class is added) or off (class is removed).
@@ -53,3 +46,11 @@ For the class naming, use a double dash after the base to mark a modifier class:
 - "some-component_text--disabled": Target this class when you want to modify
 
 If you're using SCSS or similar, it's recommended to use the `&--[state]` syntax to target this in CSS.
+
+### Prefixing
+
+Optional: Add a constant prefix (such as "app-*") to all component class names in all of the application. This will act as namespacing.
+
+_Why?_ Avoids potential naming clashes between your own component and other 3rd party CSS your app uses. Do this especially if your components have generic/common names.
+
+In case of shared components, consider using a prefix such as "s-*" to make it easier to tell if the component is shared or specific in usage.
