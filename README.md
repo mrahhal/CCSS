@@ -18,7 +18,7 @@ Elements are actual html elements. This can be the component itself (or its root
 
 Use "component-name" for the main component class.
 
-Example:
+**Examples:**
 - "my-component" for a `MyComponent` component
 
 #### Component child
