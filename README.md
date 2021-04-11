@@ -14,12 +14,6 @@ Conventions are tied directly to the component. We have only two types of classe
 
 Elements are actual html elements. This can be the component itself (or its root html element as in React), or a component child (i.e any html element in the component's template).
 
-In case of shared components, consider using a prefix such as "s-*" to make it easier to tell if the component is shared or specific in usage.
-
-Optional: Add a constant prefix (such as "app-*") to all component class names in all of the application. This will act as namespacing.
-
-_Why?_ Avoids potential naming clashes between your own component and other 3rd party CSS your app uses. Do this especially if your components have generic/common names.
-
 #### Component
 
 Use "component-name" for the main component class.
@@ -40,6 +34,13 @@ Underscore is only allowed once in a class name, and it always follows the compo
 - "my-component_content-text"
 
 _Why?_ This makes it clear at a glance that this class lives in "some-component", and that it's on an element inside this component's template called "container-text".
+
+
+In case of shared components, consider using a prefix such as "s-*" to make it easier to tell if the component is shared or specific in usage.
+
+Optional: Add a constant prefix (such as "app-*") to all component class names in all of the application. This will act as namespacing.
+
+_Why?_ Avoids potential naming clashes between your own component and other 3rd party CSS your app uses. Do this especially if your components have generic/common names.
 
 ### Modifiers
 
