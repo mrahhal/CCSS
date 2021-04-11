@@ -1,6 +1,6 @@
 # CCSS
 
-A minimal set of conventions for CSS class naming in a modern apps.
+A minimal set of conventions for CSS class naming in modern apps.
 
 CCSS a hybrid methodology, designed and tailored for SPA apps or any framework where componentization is heavily used. It's the result of experimenting on different ideas and reaching a minimal system that proves most maintainable when building huge apps.
 
