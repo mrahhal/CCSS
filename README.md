@@ -56,3 +56,11 @@ Optional: Add a constant prefix (such as "app-*") to all component class names. 
 _Why?_ Avoids potential naming clashes between your own component and other 3rd party CSS your app uses. Do this especially if your components have generic/common naming sense.
 
 In case of shared components, components that are generic in nature, consider using a prefix such as "s-*" to make it easier to tell that this component is shared and not a specific component that belongs to some page.
+
+### Using CCSS?
+
+Copy the following in your project's README for a link to this document:
+
+```md
+This project follows [CCSS](https://mrahhal.net/CCSS) for CSS naming conventions.
+```
