@@ -62,5 +62,5 @@ In case of shared components, components that are generic in nature, consider us
 Copy the following in your project's README for a link to this document:
 
 ```md
-This project follows [CCSS](https://mrahhal.net/CCSS) for CSS naming conventions.
+This project follows [CCSS](https://github.com/mrahhal/CCSS) for CSS naming conventions.
 ```
