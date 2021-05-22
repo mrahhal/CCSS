@@ -59,8 +59,10 @@ In case of shared components, components that are generic in nature, consider us
 
 ### Using CCSS?
 
-Copy the following in your project's README for a link to this document:
+Copy the following in your project's README for a link to this document with a badge:
 
 ```md
+[![CCSS](https://img.shields.io/badge/follows-CCSS-cc00ff.svg)](https://github.com/mrahhal/CCSS)
+
 This project follows [CCSS](https://github.com/mrahhal/CCSS) for CSS naming conventions.
 ```
