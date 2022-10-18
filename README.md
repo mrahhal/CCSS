@@ -2,11 +2,11 @@
 
 A minimal set of conventions for CSS class naming in modern apps.
 
-CCSS is designed and tailored for SPA apps or any framework where componentization is heavily used. It's the result of experimenting on different ideas and reaching a minimal system that proves most maintainable when building huge apps.
+CCSS is designed and tailored for SPA apps or any framework where componentization is heavily used. It's the result of experimenting on different ideas and reaching a minimal system that proves most maintainable when building complex apps.
 
 It prefers keeping things simple and to the point, and only covers the most fundamental naming rules within a component - the skeleton of the application, leaving the rest of the details for the consumer.
 
-The ultimate focus is on maintainability and ease of visual debugging, i.e telling where each class comes from and what it's doing from its name, while avoiding clashes with other parts of the app.
+The ultimate focus is on maintainability and ease of visual debugging, i.e telling where each class comes from and what it's doing from its name, while also avoiding name clashes with other parts of the app.
 
 ## Conventions
 
@@ -14,7 +14,7 @@ Conventions are tied directly to the component. We have only two types of classe
 
 ### Elements
 
-Elements are actual html elements. This can be the component itself (or its root html element as in React), or a component child (i.e any html element in the component's template).
+Element classes are tied to actual html elements. This can be the component itself (or its root html element as in React), or a component child (i.e any html element in the component's template).
 
 #### Component
 
@@ -25,9 +25,9 @@ Use `component-name` for the main component class.
 
 #### Component child
 
-A component child is an html element in its wrapping component's template. This means that elements deeper inside other components aren't considered, as these belong to their own component.
+A component child is an html element in its wrapping component's template. This means that elements deeper inside other nested components aren't considered, as these are children to their own component.
 
-Use an underscore after the base class to mark a child element: `component-name_element`.
+Use an underscore after the base element class to mark a child element: `component-name_element`.
 
 Underscore is only allowed once in a class name, and it always follows the component's class name.
 
@@ -39,9 +39,9 @@ _Why?_ This makes it clear at a glance that this class lives in `my-component`, 
 
 ### Modifiers
 
-Modifiers are the equivalent of a boolean flag on elements. It's either on (class is added) or off (class is removed). It's great for classes that change things depending on the state of the component. We use modifiers to modify elements (the other kind of classes we have).
+Modifiers are the equivalent of a boolean flag on elements. It's either on (class is added) or off (class is removed). It's great for classes that change things depending on the state of the component. We use _modifiers_ to modify _elements_.
 
-Use a double dash after the base class to mark a modifier class: `element-class--modifier`.
+Use a double dash after the base element class to mark a modifier class: `element-class--modifier`.
 
 **Examples:**
 - `my-component--disabled`
